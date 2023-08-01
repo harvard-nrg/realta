@@ -1,0 +1,6 @@
+__title__ = 'realta'
+__description__ = 'STAR data management tools'
+__url__ = 'https://github.com/harvard-nrg/realta'
+__version__ = 'v0.1.0'
+__author__ = 'Neuroinformatics Research Group'
+__author_email__ = 'info@neuroinfo.org'

@@ -1,0 +1,24 @@
+move_t1w_abcd:
+    - series_description: T1w_setter
+      image_type: [ORIGINAL, PRIMARY, M, ND, MOSAIC]
+anat_t1w_abcd:
+    - series_description: ABCD_T1w_MPR_vNav
+      image_type: [ORIGINAL, PRIMARY, M, ND, NORM]
+move_t2w_abcd:
+    - series_description: T2w_setter
+      image_type: [ORIGINAL, PRIMARY, M, ND, MOSAIC]
+anat_t2w_abcd:
+    - series_description: ABCD_T2w_SPC_vNav
+      image_type: [ORIGINAL, PRIMARY, M, ND, NORM]
+move_t1w_gsp:
+    - series_description: T1_vNav_setter
+      image_type: [ORIGINAL, PRIMARY, M, ND, MOSAIC]
+anat_t1w_gsp:
+    - series_description: T1_MEMPRAGE_GSP_vNavTrk RMS
+      image_type: [ORIGINAL, PRIMARY, OTHER, ND, NORM, MEAN]
+move_t2w_gsp:
+    - series_description: T2_vNav_setter
+      image_type: [ORIGINAL, PRIMARY, M, ND, MOSAIC]
+anat_t2w_gsp:
+    - series_description: T2_SPACE_GSP_vNavTrk
+      image_type: [ORIGINAL, PRIMARY, M, ND, NORM]
