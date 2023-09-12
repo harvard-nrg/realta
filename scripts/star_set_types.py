@@ -28,7 +28,7 @@ def main():
         requests_cache.install_cache('cache', backend='sqlite')
 
     auth = yaxil.auth(args.xnat)
-    
+    print(args.mapping)
     # read in mapping file and unique it
     mapping = dict()
     with open(args.mapping) as fo:
@@ -49,6 +49,8 @@ def main():
             scanid = scan['ID']
             key = scan['series_description']
             actual = scan['type']
+            if key not in mapping:
+                continue
             expected = mapping[key]
             if key in mapping and actual != mapping[key]:
                 print(f'{project},{subject},{session},{scanid},{key},{actual},{expected}')
